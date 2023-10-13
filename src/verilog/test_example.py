@@ -3,7 +3,7 @@ from cocotb.triggers import FallingEdge, RisingEdge, Timer
 
 
 @cocotb.test()
-async def test_and_gate(dut):
+async def test_example(dut):
     dut.a.value = 0
     dut.b.value = 0
     await Timer(1, units="ns")
