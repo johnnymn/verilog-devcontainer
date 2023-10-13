@@ -1,0 +1,31 @@
+{
+  "name": "verilog",
+  "dockerFile": "Dockerfile",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "editor.formatOnSave": true,
+      "[verilog]": {
+        "editor.defaultFormatter": "chipsalliance.verible"
+      },
+      "[systemverilog]": {
+        "editor.defaultFormatter": "chipsalliance.verible"
+      },
+      "[python]": {
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": false
+        },
+        "editor.defaultFormatter": "ms-python.autopep8"
+      },
+      "python.languageServer": "Pylance",
+      "extensions": [
+        "editorconfig.editorconfig",
+        "ms-python.python",
+        "ms-python.autopep8",
+        "luisfontes19.vscode-swissknife",
+        "chipsalliance.verible",
+        "mshr-h.veriloghdl"
+      ]
+    }
+  }
+}
